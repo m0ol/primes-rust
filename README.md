@@ -1,0 +1,3 @@
+# RustHelloWorld
+
+Exercicio mentoria Genisson
