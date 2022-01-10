@@ -1,12 +1,12 @@
-pub fn PrimeCheckfn(n: i32) -> bool {
+pub fn prime_checkfn(n: i32) -> bool {
     let mut i: i32 = 2;
-    let mut isPrime: bool = true;
+    let mut is_prime: bool = true;
     while i < n {
         if n % i == 0 {
-            isPrime = false;
+            is_prime = false;
             break;
         }
         i += 1;
     }
-    isPrime
+    is_prime
 }
