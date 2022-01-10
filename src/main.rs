@@ -16,7 +16,12 @@ fn main() {
     numbers = input.split(" ").collect();
 
     for i in 0..interation {
-        println!("Is the number Correct? {}", numbers[0]);
-        println!("Is the number Correct2? {}", numbers[1]);
+        for j in numbers[0].parse::<i32>().unwrap()..numbers[1].parse::<i32>().unwrap() {
+            if j % numbers[0].parse::<i32>().unwrap() == 0 {
+                println!("{}", j);
+            }
+        }
     }
+    //println!("Is the number Correct? {}", numbers[0]);
+    //println!("Is the number Correct2? {}", numbers[1]);
 }
