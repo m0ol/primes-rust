@@ -32,17 +32,6 @@ mod prime_check {
             i += 1;
         }
         return numbersprimes;
-
-        /*
-        Nao entendi o porque nao funcionou com for
-        for _j in
-            numbers[0].trim().parse::<i32>().unwrap()..numbers[1].trim().parse::<i32>().unwrap()
-        {
-            if prime_checkfn(_j) {
-                numbersprimes.push(_j);
-            }
-        }
-        return numbersprimes;*/
     }
 }
 
