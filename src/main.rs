@@ -58,5 +58,11 @@ pub fn main() {
     for _i in 0..interation {
         finalresult.push(prime_check::user_input_primes());
     }
-    println!("{:?}", finalresult);
+    println!("\n");
+    for _x in 0..finalresult.len() {
+        for _y in 0..finalresult[_x].len() {
+            println!("{:?}", finalresult[_x][_y]);
+        }
+        println!("\n");
+    }
 }
